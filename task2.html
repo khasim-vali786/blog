@@ -1,0 +1,38 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Simple Blog</title>
+</head>
+<body>
+    <header>
+        <h1>Simple Blog</h1>
+        <button onclick="openForm()">Write a Post</button>
+    </header>
+
+    <main id="posts-container">
+        <!-- Posts will be dynamically added here -->
+    </main>
+
+    <div class="form-popup" id="postForm">
+        <form class="form-container">
+            <h2>New Post</h2>
+
+            <label for="postTitle"><b>Title</b></label>
+            <input type="text" id="postTitle" placeholder="Enter title" required>
+
+            <label for="postContent"><b>Content</b></label>
+            <textarea id="postContent" placeholder="Enter your post" required></textarea>
+
+            <button type="button" onclick="addPost()">Publish</button>
+            <button type="button" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
